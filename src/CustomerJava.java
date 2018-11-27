@@ -70,12 +70,15 @@ public class CustomerJava {
                 ", company='" + company + '\'' +
                 '}';
     }
-}
-class main{
     public static void main(String args[]){
         CustomerJava customer = new CustomerJava("Owais");
         customer.setName("Alam");
-        System.out.print(customer.getName());
+        System.out.println(customer.getName());
 
+        Customer custKt = new Customer("Kotlin","owais","ITR");
+        custKt.getName();
+
+        money tickets = new money("1000","$");
+        System.out.println("ticket amount is"+tickets.getAmount()+" "+tickets.getCurrency());
     }
 }
