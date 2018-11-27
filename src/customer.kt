@@ -6,4 +6,9 @@ fun main(args:Array<String>){
     cust1.company="IT Retina"
     var cust2 = cust1.copy(email = "Rehan")
     println("${cust2.name} email: ${cust2.email}")
+
+    //interoperability with java
+    var custJava = CustomerJava("Java Customer")
+    custJava.company="IT RETINA"
+     println(custJava.name+" "+custJava.email)
 }

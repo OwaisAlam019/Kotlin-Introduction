@@ -1,20 +1,18 @@
-import java.lang.reflect.Array;
-
-public class Customer {
+public class CustomerJava {
     private String name;
     private String email;
     private String company;
 
-    public Customer(String name) {
+    public CustomerJava(String name) {
         this(name, "", "");
     }
 
-    public Customer(String name, String email) {
+    public CustomerJava(String name, String email) {
         this(name, email, "");
 
     }
 
-    public Customer(String name, String email, String company) {
+    public CustomerJava(String name, String email, String company) {
         this.name = name;
         this.email = email;
         this.company = company;
@@ -49,7 +47,7 @@ public class Customer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Customer customer = (Customer) o;
+        CustomerJava customer = (CustomerJava) o;
 
         if (name != null ? !name.equals(customer.name) : customer.name != null) return false;
         if (email != null ? !email.equals(customer.email) : customer.email != null) return false;
@@ -66,7 +64,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "CustomerJava{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", company='" + company + '\'' +
@@ -75,7 +73,7 @@ public class Customer {
 }
 class main{
     public static void main(String args[]){
-        Customer customer = new Customer("Owais");
+        CustomerJava customer = new CustomerJava("Owais");
         customer.setName("Alam");
         System.out.print(customer.getName());
 
